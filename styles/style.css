@@ -190,8 +190,6 @@ h6{
 }
 /*секция feynman и ее классы */
 .feynman{
-  margin: 0px;
-  padding: 0px; 
   margin-top: 100px; 
   min-width: 867px;
   min-height:637px;
