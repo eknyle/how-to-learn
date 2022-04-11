@@ -3,55 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
+
   <title>Научиться учиться</title>
 </head>
 <body>
   <div class="page">
-    <header class="header">
-      <div class="header__logo logo_place_header">
-      </div>
-      <div class="header__title">
-        <p class="header__title_text">Научиться учиться</p>
-      </div>
-      <div class="header__subtitle">
-        <p class="header__subtitle_text"> Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни
-          <a href="#" class="header__subtitle_link">Узнать -></a>
+    <header id="header" class="header">
+      <picture  class="logo_place_header">
+        <img src="images/logo_place_header.svg" alt="Яндекс Практикум">
+      </picture>     
+      <section class="title_place_header">
+        <h2>Научиться учиться</h2>
+      </section>
+      <div class="subtitle_place_header">
+        <p> Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни
+          <a href="#feynman" class="subtitle-link_place_header">Узнать &xrarr;</a>
         </p>        
       </div>
-      <div class="header__main-illustration"> 
-      
-      </div>
-      <div class="header__square-pic"></div>
+      <picture  class="main-illustration">
+        <img src="images/header-image.png" alt="Иллюстрация к заголовку" class="header__main-illustration_pic">
+      </picture> 
+      <div  class="header__square-pic"></div> 
     </header>
-    <section class="description">
+    <div  id="description" class="description">
       <div class="two-columns">
-        <div class="brief">
-          Главные проблемы в обучении
-        </div>
+        <section class="brief">
+          <h6>Главные проблемы в обучении</h6>
+        </section>
         <div class="main-text">
-          <div class="paragraph">
+          <p class="paragraph">
               Ни в школе, ни в институте нас не научат тому, как правильно изучать материал. 
               Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест,
               но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
-          </div>
-          <div class="paragraph">
-            <span class="span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
-          </div>
-          <div class="paragraph">
+          </p>
+          <p class="paragraph">
+            <span class="paragraph span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
+          </p>
+          <p class="paragraph">
             Конкретные техники и упражнения позволяют изменить подход к обучению, сделать его эффективным и захватывающим.
             Эти же техники применяются на примере обучения в Практикуме.
-          </div>
+          </p>
         </div>
       </div>
-    </section>
-    <section class="digits">
-      <div class="section-title">
-        <h2>Цифры и факты</h2>
-      </div>
-      <div class="section-subtitle">
-       <h5> Про учебу и мозг</h5>
-      </div>
+    </div>
+    <div class="digits">
+      <section class="section-title">
+        <h3>Цифры и факты</h3>
+      </section>
+      <section class="section-subtitle">
+       <h4> Про учебу и мозг</h4>
+      </section>
       <div class="table">
         <div class="table__cell">
           <h4 class="table__cell_heading">86 миллиардов</h4>
@@ -88,24 +91,24 @@
           <p class="table__cell_text">Открытие условного рефлекса</p>
         </div>
       </div>
-    </section>
-    <section class="feynman">
-      <div class="feynman__title">
-        Метод Фейнмана
-      </div>
-      <div class="feynman__subtitle">
-        Выучить и не забыть
-      </div>
-      <div class="feynman__link">
-        <a href="" class="feynman__link_decoration">Подробнее -></a>
-      </div>      
-    </section>
-    <section class="kaufman"> 
-        <div class="section-title">
-          Принципы обучения
-        </div>
+    </div>
+    <div id="feynman" class="feynman">
+      <section class="feynman__block">
+        <h1>Метод Фейнмана</h1>
+      </section>
+      <section class="feynman__subtitle">
+        <h5>Выучить и не забыть</h5>
+      </section>
+      <section class="feynman__link">
+        <h5><a href="#" class="feynman__link_decoration">Подробнее &xrarr;</a></h5>
+      </section>      
+    </div>
+    <div class="kaufman"> 
+        <section class="section-title">
+          <h3>Принципы обучения</h3>
+        </section>
         <div class="section-subtitle">
-        от Джоша Кауфмана
+          <h4>от Джоша Кауфмана</h4>
         </div>
         <div class="table">
           <div class="table__cell_theme_dark">
@@ -149,34 +152,36 @@
             <p class="table__cell_text">Уделяйте внимание количеству и скорости.</p>
           </div>
         </div>
-    </section>
+      </div>
     <footer class="footer">
-      <section class="columns">
+      <div class="columns">
         <div class="column__content_copyright">
           <div class="logo_place_footer"></div>
           <div class="footer_author"> &copy;Виктор Абанькин</div>
         </div>
         <div class="column__content_info">
-          <h5 class="footer__column-heading">О практикуме</h5>
+          <div class="footer__column-heading">О практикуме</div>
           <div class="footer__column-links">
-            Главная<br>Концепция<br>Наставники
+            <a href="#header" class="link">Главная</a><br>
+            <a href="#description" class="link">Концепция</a><br>
+            <a href="#feynman"  class="link">Наставники</a>
           </div>    
         </div>
         <div class="column__content_social">
-          <h5 class="footer__column-heading">Соцсети</h5>
+          <div class="footer__column-heading">Соцсети</div>
           <div class="footer__column-link">
             <div>
-              <a ><img  alt="" class="footer__social-icon" src="images/facebook_color_white.svg"></span>Facebook</a>
+              <a href="https://ru-ru.facebook.com/yandex/" class="link"><img  alt="Facebook" class="footer__social-icon" src="images/facebook_color_white.svg">Facebook</a>
+            </div> 
+            <div>    
+              <a href="https://vk.com/yandex" class="link"><img  alt="ВКонтакте" class="footer__social-icon" src="images/vk_color_white.svg">ВКонтакте</a>
             </div>
-            <div>
-              <a><img  alt="" class="footer__social-icon" src="images/vk_color_white.svg"></span>ВКонтакте</a>
-            </div>
-            <div >
-              <a><img alt=""  class="footer__social-icon" src="images/instagram_color_white.svg"></span>Instagram</a>
-            </div>
+            <div>          
+              <a href="https://www.instagram.com/yandex/" class="link"><img alt="Instagram"  class="footer__social-icon" src="images/instagram_color_white.svg">Instagram</a>
+            </div>         
         </div>
         </div>
-      </section>
+      </div>
     </footer>
   </div>
 </body>
