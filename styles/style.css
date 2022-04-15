@@ -65,7 +65,7 @@ h6{
   height: 32px;
   z-index: 5;
 }
-.logo_place_header{ 
+.logo_place_header{
   position:absolute;
   top:30px;
   left:64px;
@@ -74,7 +74,7 @@ h6{
   width:730px;
   display:flex;
   position: relative;
-  align-self: center; 
+  align-self: center;
   margin-left: 64px;
   z-index: 5;
 }
@@ -289,7 +289,7 @@ h6{
 .column_content_copyright{
   flex-basis: 711px;
 }
-.logo{
+.column .logo{
   width: 228px;
   height: 32px;
   z-index: 5;
