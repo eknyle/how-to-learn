@@ -60,48 +60,52 @@ h6{
   display:flex;
   /* выше установили ограничения для секции */
 }
-.logo_place_header{
+.logo{
   width: 228px;
   height: 32px;
+  z-index: 5;
+}
+.logo_place_header{ 
   position:absolute;
   top:30px;
   left:64px;
-  z-index: 5;
 }
-.title_place_header{
+.header__title{
+  width:730px;
   display:flex;
   position: relative;
-  align-self: center;
-  width:730px;
+  align-self: center; 
   margin-left: 64px;
   z-index: 5;
 }
-.subtitle_place_header{
+.header__subtitle{
   width:388px;
   display:flex;
   position: absolute;
   left:64px;
   bottom:30px;
-  line-height: 25px;
-  font-size:18px;
   z-index: 5;
 }
-.subtitle-link_place_header{
+.header__subtitle .text{
+  line-height: 25px;
+  font-size:18px;
+}
+.header__subtitle .text .link{
   color: #2f80ed;
   text-decoration: none;
 }
-.main-illustration{
+.header__main-illustration{
   display:flex;
   position: absolute;
   bottom:0;
   right: 0;
   z-index: 1;
-}
-.header__main-illustration_pic{
-  width: 765px;
+  width:765px;
   height: 608px;
+  background-size: cover;
+  background-image: url(../images/header-image.png);
+  background-repeat: no-repeat;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -126,13 +130,13 @@ h6{
   width: 80%;
   justify-content: space-between;
 }
-.brief{
+.description__brief{
   display: flex;
   height: 100%;
   width: 175px;
   color: #2f80ed;
 }
-.main-text{
+.description__main-text{
   display: flex;
   width: 80%;
   min-width: 784px;
@@ -174,23 +178,23 @@ h6{
   flex-flow: row wrap;
   z-index: 5;
 }
-.table__cell{
+.digits .table .cell{
   width: 250px;
   margin-top: 60px;
 }
-.table__cell_heading{
+.heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
-.table__cell_text{
+.text{
   margin-top:20px;
   line-height: 1.2;
   font-size: 18px;
 }
 /*секция feynman и ее классы */
 .feynman{
-  margin-top: 100px;
+  height: 890px;
   min-width: 867px;
   min-height:637px;
   display: flex;
@@ -198,29 +202,18 @@ h6{
   flex-wrap: wrap;
   align-items: center;
   position: relative;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-size:867px 637px;
+  background-position:left 0 bottom 0;
+  background-color: #f2f2f2;
 }
-.feinman__illustration{
-  display:flex;
-  position: absolute;
-  bottom:0;
-  left: 0;
-  z-index: 0;
-}
-.feinman__illustration-pic{
-  width: 867px;
-  height:637px;
-}
-.feynman__block{
+.feynman__title{
   width: 648px;
   margin-top: 100px;
   margin-bottom: 70px;
   text-align:center;
   z-index: 5;
-}
-.feynman__block-title{
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 700;
 }
 .feynman__subtitle{
   display: flex;
@@ -234,7 +227,7 @@ h6{
   right: 48px;
   z-index: 5;
 }
-.feynman__link_decoration{
+.feynman__link .link{
   color: #2f80ed;
   text-decoration: none;
 }
@@ -248,13 +241,10 @@ h6{
   color: white;
   background-color: #1f1f1f;
   position: relative;
-}
-.kaufman__illustration{
-  display:flex;
-  position: absolute;
-  top:0;
-  right: -210px;
-  z-index: 0;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position:right -210px top 0;
 }
 .kaufman .section-title{
   margin-top: 90px;
@@ -262,12 +252,13 @@ h6{
 .kaufman .section-subtitle{
   margin-top: 20px;
 }
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+.kaufman .table .cell{
   width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
+  margin-right: 0;
+}
+.cell_theme_dark {
+  color: white;
 }
 .kaufman .table{
   margin-bottom: 90px;
@@ -292,21 +283,23 @@ h6{
   position:relative;
   justify-content: space-between;
 }
-.column__content_copyright{
+.column{
   min-height: 350px;
-  flex-basis: 711px;
-  position: relative;
-  width: 50%;
 }
-.logo_place_footer{
+.column_content_copyright{
+  flex-basis: 711px;
+}
+.logo{
   width: 228px;
   height: 32px;
-  display:flex;
-  position: absolute;
   z-index: 5;
   background-image: url(../images/logo_place_footer.svg);
 }
-.footer_author{
+.logo_place_footer{
+  display:flex;
+  position: absolute;
+}
+.author{
   display: flex;
   position:absolute;
   margin-top: 18px;
@@ -320,26 +313,22 @@ h6{
   vertical-align: top;
   position: relative;
 }
-.footer__column-heading{
+.column-heading{
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
 }
-.footer__column-links{
+.column-links{
   margin-top: 20px;
   margin-bottom: 16px;
   line-height: 30px;
   font-size: 18px;
 }
-.footer__column-links .link{
+.link{
   color: #f2f2f2;
   text-decoration: none;
 }
-.footer__column-link .link{
-  color: #f2f2f2;
-  text-decoration: none;
-}
-.footer__column-link{
+.column-link{
   margin-top: 20px;
   margin-bottom: 16px;
   line-height: 30px;
