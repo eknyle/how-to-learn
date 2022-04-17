@@ -56,8 +56,6 @@
   left:64px;
   bottom:30px;
   z-index: 5;
-  margin: 0;
-  padding: 0;
   line-height: 25px;
   font-size:18px;
 }
@@ -280,7 +278,7 @@
   display: flex;
   justify-content: center;
 }
-.footer__columns{  
+.footer__columns{
   margin-bottom: 40px;
   margin-top:60px;
   width:90%;
@@ -308,7 +306,7 @@
   vertical-align: top;
   position: relative;
 }
-.footer__column-heading{  
+.footer__column-heading{
   white-space: nowrap;
   line-height: 30px;
   font-size: 18px;
