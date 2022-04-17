@@ -167,16 +167,16 @@
   flex-flow: row wrap;
   z-index: 5;
 }
-.table__cell_place_digits{
+.table__cell{
   width: 250px;
   margin-top: 60px;
 }
-.heading{
+.table__heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
-.text{
+.table__text{
   margin-top:20px;
   line-height: 1.2;
   font-size: 18px;
@@ -251,22 +251,22 @@
   color: white;
   margin-top: 20px;
 }
-.table__cell_place_kaufman{
+.table__cell_theme_dark {
+  color: white;
   width: 200px;
   margin-top: 80px;
   margin-right: 0;
 }
-.table__cell_theme_dark {
-  color: white;
-}
 .kaufman__triangle{
-  width:995px;
-  height:1006px;
+  width:877px;
+  height:877px;
   display:flex;
-  position: absolute;
+  position:absolute;
+  z-index: 0;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
   top:0;
   right: -210px;
-  z-index: 0;
 }
 /*секция footer и ее классы */
 .footer{
@@ -320,6 +320,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  list-style-type:none;
+  padding-left: 0;
 }
 .footer__column-link{
   margin-top: 20px;
@@ -330,6 +332,8 @@
   flex-direction: column;
   justify-content: space-between;
   white-space: nowrap;
+  list-style-type:none;
+  padding-left: 0;
 }
 .footer__link{
   color: #f2f2f2;
