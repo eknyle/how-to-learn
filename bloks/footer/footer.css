@@ -1,0 +1,10 @@
+/*секция footer и ее классы */
+.footer{
+    min-height: 350px;
+    color: white;
+    background-color: #1f1f1f;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }

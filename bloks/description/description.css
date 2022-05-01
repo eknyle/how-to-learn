@@ -1,0 +1,9 @@
+/* секция description и ее классы*/
+.description{
+    margin:100px 0 0 0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
