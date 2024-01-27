@@ -1,4 +1,5 @@
 @import url(../vendor/normalize.css);
+@import url(../fonts/helvetica.css);
 @import url(../blocks/rotation/rotation.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
